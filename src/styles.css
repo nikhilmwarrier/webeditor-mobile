@@ -1,0 +1,186 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	background: #51534a;
+}
+
+h1 {
+	font-family: "Roboto", sans-serif;
+	color: #eee;
+	text-align: center;
+	line-height: 6rem;
+}
+
+iframe {
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+/**/
+.editor-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/**/
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: #202020;
+	z-index: 5;
+	transition: all 0.2s;
+	animation: slide-in 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly !important;
+	flex-direction: column;
+	cursor: default !important;
+	padding-top: 4rem !important;
+}
+
+.sidebar > * {
+	cursor: default;
+}
+
+.sidebar h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+a.repo-link {
+	color: cyan;
+	font-family: "Fira Mono", monospace;
+	line-height: 2rem;
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@keyframes slide-in {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+.tabbar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background: #383a31;
+	width: 100%;
+	height: 40px;
+}
+
+.tabbar > * {
+	-webkit-tap-highlight-color: transparent;
+	padding: 0.5rem;
+	color: #ccc;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.8rem;
+	cursor: pointer;
+	min-width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.1s;
+	border-top: 2px solid transparent;
+	user-select: none;
+}
+
+.tabbar > div:first-child {
+	min-width: 0;
+	width: auto;
+	max-height: 0.8rem;
+	padding-right: 10px;
+}
+
+.tabbar .active {
+	background: #202020;
+	color: #eee;
+	border-top-color: #d52563;
+}
+
+.download-btn {
+	position: fixed;
+	right: 0;
+	font-size: 0.8rem;
+	background: green;
+	color: #fff;
+	padding: 0.2rem;
+	border-radius: 5px;
+	min-width: 20px;
+}
+
+.download-btn span {
+	font-size: 1rem;
+}
+
+/* Editor overrides */
+
+.ace_editor.hidden {
+	display: none !important;
+}
+
+[id^="editor-"] {
+	height: 100% !important;
+	width: 100% !important;
+	border: 1px solid #1e1e11;
+}
+
+.ace_tooltip {
+	background-color: #333;
+	border: none;
+	color: #eee;
+	font-family: "Fira Mono", monospace;
+}
+
+.ace_dark > .ace_mobile-menu {
+	box-shadow: none;
+	z-index: 2;
+}
+
+.ace_mobile-menu > span {
+	display: flex;
+	flex-direction: column;
+}
+
+.ace_mobile-menu .ace_mobile-button {
+	padding: 5px 10px;
+}
+
+.ace_dark .ace_editor.ace-tm {
+	background: #333;
+}
+
+/* Documentation tooltip */
+.ace_tooltip.ace_doc-tooltip {
+	display: none !important;
+}

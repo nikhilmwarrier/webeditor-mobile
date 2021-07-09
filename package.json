@@ -1,0 +1,24 @@
+{
+  "name": "react-snowpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "dependencies": {
+    "ace-builds": "^1.4.12",
+    "emmet": "^2.3.4",
+    "react": "^17.0.2",
+    "react-ace": "^9.4.1",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "snowpack": "^3.5.9"
+  }
+}
