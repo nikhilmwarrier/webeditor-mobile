@@ -61,16 +61,31 @@ iframe {
 	cursor: default;
 }
 
+.sidebar p {
+	font-size: 1rem;
+	line-height: 2.5rem;
+}
+
+.sidebar p:last-of-type {
+	font-size: 0.8rem;
+	line-height: 1.6rem;
+}
+
 .sidebar h3 {
 	font-family: "Roboto", sans-serif;
 	font-weight: normal;
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 a.repo-link {
 	color: cyan;
 	font-family: "Fira Mono", monospace;
 	line-height: 2rem;
+	text-decoration: none;
+}
+
+a {
+	color: cyan;
 	text-decoration: none;
 }
 
@@ -132,7 +147,7 @@ a.repo-link {
 	position: fixed;
 	right: 0;
 	font-size: 0.8rem;
-	background: green;
+	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	padding: 0.2rem;
 	border-radius: 5px;
