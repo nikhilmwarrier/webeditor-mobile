@@ -1,0 +1,5 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target" : { "namespace": "android_app", "package_name": "me.nikhilmwarrier.webeditor.mobile",
+                   "sha256_cert_fingerprints": ["1C:81:0F:71:55:32:15:DE:94:C7:76:60:67:72:E2:F3:F1:8D:CF:03:40:4F:B7:07:FA:FC:D1:92:18:21:C5:80"] }
+    }]
